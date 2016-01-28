@@ -4,7 +4,7 @@ class Puzzle(models.Model):
     name = models.CharField(max_length=50)
     short_name = models.CharField(max_length=20)
     url = models.CharField(max_length=255)
-    answer = models.CharField(max_length=32) # Maybe something else, if hashed
+    answer = models.CharField(max_length=32) # Answer is stored as an MD5 hash
     meta_order = models.PositiveSmallIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

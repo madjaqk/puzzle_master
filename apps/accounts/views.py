@@ -21,6 +21,7 @@ class Register(View):
         else:
             pin = randint(1000,9999)
             new_user = User.objects.create(username=username, pin=pin)
+            request.session["id"] = new_user.id
             context = {"username": username, "pin": pin}
             return render(request, "accounts/success.html", context)
 
@@ -52,5 +53,14 @@ class LogIn(View):
             return redirect("accounts-login")
         else:
             request.session["id"] = user.id
-            return HttpResponse("Logged in")
- 
+            return redirect("/puzzles")
+
+class LogOut(View):
+    def get(self, request):
+        try:
+            del request.session["id"]
+        except:
+            pass
+
+        return redirect("/")
+     
