@@ -1,5 +1,37 @@
-<h1>Login Here!</h1>
-<form action="{% url 'accounts-login' %}" method="POST">
-	{% csrf_token %}
-	{{ form }}
-</form>
+<html>
+<head>
+	<title>Log In</title>
+</head>
+<body>
+	<h1>Log in:</h1>
+	{% if messages %}
+		{% for message in messages %}
+			{% if message.extra_tags == "login" %}
+				<p>{{ message }}</p>
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+	<form action="{% url 'accounts-login' %}" method="POST">
+		{% csrf_token %}
+		<table>
+			{{ login_form.as_table }}
+		</table>
+		<input type="submit" value="Log In">
+	</form>
+	<h1>Create a new account:</h1>
+	{% if messages %}
+		{% for message in messages %}
+			{% if message.extra_tags == "register" %}
+				<p>{{ message }}</p>
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+	<form action="{% url 'accounts-register' %}" method="POST">
+		{% csrf_token %}
+		<table>
+			{{ register_form.as_table }}
+		</table>
+		<input type="submit" value="Create">
+	</form>
+</body>
+</html>
