@@ -51,18 +51,6 @@ class LogIn(View):
             messages.error(request, "Incorrect PIN", extra_tags="login")
             return redirect("accounts-login")
         else:
+            request.session["id"] = user.id
             return HttpResponse("Logged in")
-        
-"""
-        if form.is_valid():
-            username = form.cleaned_data["username"]
-            password = form.cleaned_data["password"]
-            user = authenticate(username=username, password=password)
-            if user is not None:
-                login(request, user)
-                return redirect("/accounts/success")
-            else:
-                return render(request, "accounts/login.html")
-        else:
-            return render(request, "accounts/login.html", context)
-"""
+ 
