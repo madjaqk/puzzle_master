@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+	<title>{% block title %}Puzzle name{% endblock %}</title>
+	<!-- Stylesheet link here -->
+</head>
+<body>
+	<div id="header"><a href="">Log out</a></div>
+	<div id="answer_check">
+		Answer check tk.  Form to submit answer, then ul of guesses
+	</div>
+	<div id="puzzle">
+		{% block puzzle %}
+		Puzzle goes here.
+		{% endblock puzzle %}
+	</div>
+	<div id="back"><a href="">Back</a></div>
+</body>
+</html>
