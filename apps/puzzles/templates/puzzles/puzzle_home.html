@@ -1,8 +1,17 @@
 <html>
 <head>
 	<title>Puzzle Home</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'puzzles/style.css' %}">
 </head>
 <body>
-	Puzzles tk
+	<h1>Puzzles</h1>
+	<ol>
+		{% for puzzle in puzzles %}
+		<li><a href="{{ puzzle.short_name }}">{{ puzzle }}</a></li>
+		{% endfor %}
+	</ol>
+	<p><a href="">About</a></p>
+	<p><a href="/logout">Log out</a></p>
 </body>
 </html>

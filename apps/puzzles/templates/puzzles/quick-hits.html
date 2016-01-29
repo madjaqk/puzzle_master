@@ -1,0 +1,609 @@
+{% extends "puzzles/puzzle_base.html" %}
+
+{% block puzzle %}
+<span class="flavor_text">I had more puzzles ideas than I could use, so I combined several of them into one.</span>
+<h3>Nurikabe</h3>
+<table class="grid quick_hits">
+	<tr>
+		<td>2</td>
+		<td></td>
+		<td>2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>2</td>
+		<td></td>
+		<td></td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>4</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>4</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<h3>Solitaire Battleships</h3>
+<table class="grid quick_hits">
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">3</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">2</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>X</td>
+		<td></td>
+		<td class="outer">3</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">3</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">0</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">4</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><div class="shape circle"></div></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">3</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">1</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="outer">1</td>
+	</tr>
+	<tr>
+		<td class="outer">2</td>
+		<td class="outer">1</td>
+		<td class="outer">2</td>
+		<td class="outer">2</td>
+		<td class="outer">2</td>
+		<td class="outer">2</td>
+		<td class="outer">1</td>
+		<td class="outer">7</td>
+		<td class="outer">1</td>
+		<td class="outer"></td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>Battleship</td>
+		<td><div class="shape left_hemicircle"></div><div class="shape"></div><div class="shape"></div><div class="shape right_hemicircle"></div></td>
+	</tr>
+	<tr>
+		<td>Cruisers</td>
+		<td><div class="shape left_hemicircle"></div><div class="shape"></div><div class="shape right_hemicircle"></div><div class="shape left_hemicircle"></div><div class="shape"></div><div class="shape right_hemicircle"></div></td>
+	</tr>
+	<tr>
+		<td>Destroyer</td>
+		<td><div class="shape left_hemicircle"></div><div class="shape right_hemicircle"></div><div class="shape left_hemicircle"></div><div class="shape right_hemicircle"></div><div class="shape left_hemicircle"></div><div class="shape right_hemicircle"></div></td>
+	</tr>
+	<tr>
+		<td>Submarine</td>
+		<td><div class="shape circle"></div><div class="shape circle"></div><div class="shape circle"></div><div class="shape circle"></div></td>
+	</tr>
+</table>
+<h3>Sudoku:</h3>
+<table class="grid quick_hits">
+	<tr>
+		<td class="left top">2</td>
+		<td class="top"></td>
+		<td class="right top"></td>
+		<td class="left top"></td>
+		<td class="top"></td>
+		<td class="right top">1</td>
+		<td class="left top">6</td>
+		<td class="top"></td>
+		<td class="right top">3</td>
+	</tr>
+	<tr>
+		<td class="left">1</td>
+		<td>8</td>
+		<td class="right"></td>
+		<td class="left"></td>
+		<td></td>
+		<td class="right"></td>
+		<td class="left"></td>
+		<td></td>
+		<td class="right">2</td>
+	</tr>
+	<tr>
+		<td class="left bottom">7</td>
+		<td class="bottom"></td>
+		<td class="right bottom"></td>
+		<td class="left bottom">3</td>
+		<td class="bottom">2</td>
+		<td class="right bottom">8</td>
+		<td class="left bottom"></td>
+		<td class="bottom"></td>
+		<td class="right bottom"></td>
+	</tr>
+	<tr>
+		<td class="left top">6</td>
+		<td class="top"></td>
+		<td class="right top"></td>
+		<td class="left top"></td>
+		<td class="top"></td>
+		<td class="right top"></td>
+		<td class="left top"></td>
+		<td class="top"></td>
+		<td class="right top">5</td>
+	</tr>
+	<tr>
+		<td class="left"></td>
+		<td></td>
+		<td class="right">8</td>
+		<td class="left"></td>
+		<td></td>
+		<td class="right">2</td>
+		<td class="left">9</td>
+		<td>3</td>
+		<td class="right">7</td>
+	</tr>
+	<tr>
+		<td class="left bottom">3</td>
+		<td class="bottom"></td>
+		<td class="right bottom">1</td>
+		<td class="left bottom"></td>
+		<td class="bottom"></td>
+		<td class="right bottom">4</td>
+		<td class="left bottom">2</td>
+		<td class="bottom"></td>
+		<td class="right bottom">8</td>
+	</tr>
+	<tr>
+		<td class="left top"></td>
+		<td class="top"></td>
+		<td class="right top"></td>
+		<td class="left top">5</td>
+		<td class="top"></td>
+		<td class="right top"></td>
+		<td class="left top">8</td>
+		<td class="top"></td>
+		<td class="right top"></td>
+	</tr>
+	<tr>
+		<td class="left"></td>
+		<td></td>
+		<td class="right"></td>
+		<td class="left"></td>
+		<td>7</td>
+		<td class="right">9</td>
+		<td class="left"></td>
+		<td>5</td>
+		<td class="right"></td>
+	</tr>
+	<tr>
+		<td class="left bottom"></td>
+		<td class="bottom">1</td>
+		<td class="right bottom">6</td>
+		<td class="left bottom"></td>
+		<td class="bottom"></td>
+		<td class="right bottom">3</td>
+		<td class="left bottom">4</td>
+		<td class="bottom"></td>
+		<td class="right bottom"></td>
+	</tr>
+</table>
+<h3>Paint by Numbers</h3>
+<table class="grid quick_hits">
+	<tr>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer">4</td>
+		<td class="outer">3</td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer">6</td>
+		<td class="outer">3</td>
+		<td class="outer">4</td>
+		<td class="outer">9</td>
+		<td class="outer">2</td>
+		<td class="outer">2</td>
+		<td class="outer">6</td>
+		<td class="outer">2</td>
+		<td class="outer">2</td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer">1</td>
+		<td class="outer">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer">3</td>
+		<td class="outer">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer">7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer"></td>
+		<td class="outer">7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer">1</td>
+		<td class="outer">1</td>
+		<td class="outer">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer">1</td>
+		<td class="outer">1</td>
+		<td class="outer">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer">1</td>
+		<td class="outer">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="outer"></td>
+		<td class="outer">1</td>
+		<td class="outer">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<h3>Word Search</h3>
+<table class="quick_hits">
+	<tr>
+		<td>A</td>
+		<td>Y</td>
+		<td>F</td>
+		<td>M</td>
+		<td>N</td>
+		<td>O</td>
+		<td>P</td>
+		<td>W</td>
+		<td>A</td>
+	</tr>
+	<tr>
+		<td>L</td>
+		<td>F</td>
+		<td>T</td>
+		<td>J</td>
+		<td>M</td>
+		<td>U</td>
+		<td>H</td>
+		<td>H</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>E</td>
+		<td>S</td>
+		<td>B</td>
+		<td>S</td>
+		<td>N</td>
+		<td>D</td>
+		<td>H</td>
+		<td>E</td>
+		<td>I</td>
+	</tr>
+	<tr>
+		<td>E</td>
+		<td>T</td>
+		<td>W</td>
+		<td>B</td>
+		<td>M</td>
+		<td>W</td>
+		<td>G</td>
+		<td>F</td>
+		<td>R</td>
+	</tr>
+	<tr>
+		<td>H</td>
+		<td>X</td>
+		<td>Z</td>
+		<td>S</td>
+		<td>C</td>
+		<td>Z</td>
+		<td>T</td>
+		<td>J</td>
+		<td>Z</td>
+	</tr>
+	<tr>
+		<td>U</td>
+		<td>J</td>
+		<td>Y</td>
+		<td>R</td>
+		<td>S</td>
+		<td>I</td>
+		<td>E</td>
+		<td>G</td>
+		<td>A</td>
+	</tr>
+	<tr>
+		<td>T</td>
+		<td>S</td>
+		<td>G</td>
+		<td>S</td>
+		<td>H</td>
+		<td>R</td>
+		<td>P</td>
+		<td>O</td>
+		<td>S</td>
+	</tr>
+	<tr>
+		<td>A</td>
+		<td>G</td>
+		<td>I</td>
+		<td>Q</td>
+		<td>P</td>
+		<td>T</td>
+		<td>M</td>
+		<td>O</td>
+		<td>A</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>M</td>
+		<td>O</td>
+		<td>V</td>
+		<td>E</td>
+		<td>R</td>
+		<td>L</td>
+		<td>A</td>
+		<td>P</td>
+	</tr>
+</table>
+{% endblock %}

@@ -13,7 +13,12 @@ class Home(View):
             request.session["id"]
         except:
             return redirect("accounts-login")
-        return render(request, "puzzles/puzzle_home.html")
+
+        context = {
+            "puzzles": sorted(Puzzle.objects.all(), key=lambda x: x.meta_order),
+            }
+        
+        return render(request, "puzzles/puzzle_home.html", context)
 
 class ShowPuzzle(View):
     def get(self, request, puzzle_name):
@@ -29,6 +34,7 @@ class ShowPuzzle(View):
 
         context = {
             "puzz_id": puzzle.id,
+            "name": puzzle.name,
             }
 
         answers = AnswerAttempt.objects.filter(user=user).filter(puzzle=puzzle)

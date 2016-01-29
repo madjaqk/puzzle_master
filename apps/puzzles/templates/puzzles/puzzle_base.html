@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lange="en">
 <head>
-	<title>{% block title %}Puzzle name{% endblock %}</title>
-	<!-- Stylesheet link here -->
+	<title>{{ name }}</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'puzzles/style.css' %}">
 </head>
 <body>
 	<div id="header"><a href="/logout">Log out</a></div>
+	{% if messages %}
+		{% for message in messages %} <h3>{{ message }}</h3> {% endfor %}
+	{% endif %}
+	<h1 class="title">{{ name }}</h1>
 	<div id="puzzle">
 		{% block puzzle %}
 		Puzzle goes here.
@@ -17,9 +22,7 @@
 			<input type="hidden" name="id" value="{{ puzz_id }}">
 			<input type="text" name="attempt"><input type="submit" value="Submit">
 		</form>
-		{% if messages %}
-			{% for message in messages %} {{ message }} {% endfor %}
-		{% endif %}
+		
 		{% if answers %}
 			<h3>Answer log</h3>
 			<ul>

@@ -1,0 +1,186 @@
+h1.title{
+	text-align: center;
+}
+
+span.flavor_text{
+	font-style: italic;
+}
+
+body{
+	background-color: blanchedalmond;
+	background-size: cover;
+	padding: 0px 50px;
+}
+
+div#answer_check{
+	margin: 8px 0px;
+}
+
+li{
+	margin-bottom: 8px;
+}
+
+table.grid{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 20px auto;
+
+}
+
+table.grid td{
+	border: 1px solid black;
+}
+
+table.grid td.black{
+	background-color: black;
+}
+
+table.acrostic td{
+	width: 50px;
+	height: 50px;
+	vertical-align: top;
+	text-align: center;
+	font-size: .8em;
+}
+
+table.acrostic_answer{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-bottom: 8px;
+}
+
+table.acrostic_answer td{
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	vertical-align: top;
+	font-size: .8em;
+	border: 1px solid black;
+}
+
+table.boxes td{
+	width: 150px;
+	height: 150px;
+	font-size: 1em;
+	vertical-align: center;
+	text-align: center;
+	border: 1px solid black;
+}
+
+span.special{
+	font-style: italic;
+	font-weight: bold;
+}
+
+div.categories{
+	display: inline-block;
+	padding: 0px 25px;
+}
+
+table.categories td{
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	vertical-align: center;
+}
+
+div.categories_puzzle{
+	width: 900px;
+}
+
+table.cryptic{
+	border: 5px solid black;
+}
+
+table.cryptic td{
+	width: 30px;
+	height: 30px;
+	vertical-align: top;
+	font-size: .8em;
+}
+
+table.grid td.outer{
+	border: 0px;
+}
+
+table.grid td.left{
+	border-left: 4px solid black;
+}
+
+table.grid td.top{
+	border-top: 4px solid black;
+}
+
+table.grid td.right{
+	border-right: 4px solid black;
+}
+
+table.grid td.bottom{
+	border-bottom: 4px solid black;
+}
+
+table.cryptic_clues td{
+	vertical-align: top;
+}
+
+.history_lesson li{
+	margin: 25px 0px;
+	list-style-type: none;
+}
+
+table.quick_hits{
+	margin: 0px;
+}
+
+table.quick_hits td{
+	height: 25px;
+	width: 25px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.shape{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-color: black;
+	margin: 0px 2px;
+}
+
+.circle{
+	border-radius: 50%;
+}
+
+.left_hemicircle{
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.right_hemicircle{
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+table.tiling td{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: center;
+}
+
+div.tiling{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 15px;
+}
+
+table.the_twist {
+	margin: auto;
+}
+
+table.the_twist td{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: center;
+}
