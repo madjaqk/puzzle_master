@@ -39,11 +39,19 @@ class ShowPuzzle(View):
 
         answers = AnswerAttempt.objects.filter(user=user).filter(puzzle=puzzle)
         answer_list = []
+
+        unsolved = True
         
         if len(answers) > 0:
             for answer in answers:
-                answer_list.append( {"answer": answer.answer, "correct": check_answer(answer.answer, puzzle.answer)})
+                is_right = check_answer(answer.answer, puzzle.answer)
+                answer_list.append( {"answer": answer.answer, "correct": is_right })
+                if is_right:
+                    messages.success(request, "{} is correct!".format(answer.answer))
+                    unsolved = False
             context["answers"] = answer_list
+            
+        context["unsolved"] = unsolved
 
         return render(request, puzzle.url, context)
 
@@ -55,9 +63,7 @@ class Check(View):
 
         AnswerAttempt.objects.create(answer=attempt, user=user, puzzle=puzzle)
 
-        if check_answer(attempt, puzzle.answer):
-            messages.success(request, "{} is correct!".format(attempt))
-        else:
+        if not check_answer(attempt, puzzle.answer):
             messages.error(request, "Sorry, {} is not correct.".format(attempt))
             
         return redirect("/puzzles/" + puzzle.short_name)

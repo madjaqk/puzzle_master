@@ -17,11 +17,13 @@
 		{% endblock puzzle %}
 	</div>
 	<div id="answer_check">
+		{% if unsolved %}
 		<form action="/puzzles/check" method="post">
 			{% csrf_token %}
 			<input type="hidden" name="id" value="{{ puzz_id }}">
 			<input type="text" name="attempt"><input type="submit" value="Submit">
 		</form>
+		{% endif %}
 		
 		{% if answers %}
 			<h3>Answer log</h3>
