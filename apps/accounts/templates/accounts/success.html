@@ -1,6 +1,8 @@
 <html>
 <head>
 	<title>Account Created</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'puzzles/style.css' %}">
 </head>
 <body>
 	<h1>Account created</h1>
@@ -8,5 +10,6 @@
 	<h2>PIN: {{ pin }}</h2>
 	<h3>PIN?</h3>
 	<p>Instead of a traditional password, this site uses a randomly-assigned four-digit code.  Password reuse is a serious problem, and I didn't want to contribute to it, but I still wanted to include a log-in system so that you could track your individual progress and read the solutions to the puzzles you've solved.  (It's randomly assigned and unchangeable, so you won't be tempted to recycle your ATM code.)  Your PIN isn't secure in any sense--it's stored in plain-text on my server--but at the same time, there shouldn't be anything on this site that asks for private or personal information anyway.</p>
+	<a href="/puzzles">The puzzles</a>
 </body>
 </html>

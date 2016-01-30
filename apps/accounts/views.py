@@ -33,6 +33,12 @@ class LogIn(View):
     login_form = LoginForm
     register_form = RegisterForm
     def get(self, request):
+        try:
+            request.session["id"]
+            return redirect("/puzzles")
+        except:
+            pass
+        
         context = {
             "login_form": self.login_form(),
             "register_form": self.register_form(),
@@ -47,8 +53,6 @@ class LogIn(View):
             return redirect("accounts-login")
 
         if str(user.pin) != pin:
-            print("user.pin: {}".format(user.pin))
-            print("pin: {}".format(pin))
             messages.error(request, "Incorrect PIN", extra_tags="login")
             return redirect("accounts-login")
         else:

@@ -1,6 +1,8 @@
 <html>
 <head>
 	<title>Log In</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'puzzles/style.css' %}">
 </head>
 <body>
 	<h1>Log in:</h1>
@@ -33,5 +35,6 @@
 		</table>
 		<input type="submit" value="Create">
 	</form>
+	<a href="/puzzles/about">What's this all about?</a>
 </body>
 </html>

@@ -20,6 +20,10 @@ class Home(View):
         
         return render(request, "puzzles/puzzle_home.html", context)
 
+class About(View):
+    def get(self, request):
+        return render(request, "puzzles/about.html")
+
 class ShowPuzzle(View):
     def get(self, request, puzzle_name):
         try:
