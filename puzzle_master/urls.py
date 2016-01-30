@@ -20,7 +20,7 @@ from apps.accounts.views import LogOut
 urlpatterns = [
     url(r'^', include('apps.accounts.urls')),
     url(r'^logout$', LogOut.as_view(), name="accounts-logout"),
-    url(r'accounts/', include('apps.accounts.urls')),
-    url(r'puzzles/', include('apps.puzzles.urls')),
+    url(r'^accounts/', include('apps.accounts.urls')),
+    url(r'^puzzles/', include('apps.puzzles.urls')),
     url(r'^admin/', admin.site.urls),
 ]
