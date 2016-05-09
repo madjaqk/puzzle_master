@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="{% static 'puzzles/style.css' %}">
 </head>
 <body>
-	<div id="header"><a href="/logout">Log out</a></div>
+	<div id="header"><a href="/logout">Log out</a> | <a href="http://www.jackbrounstein.com">Back to JackBrounstein.com</a></div>
 	{% if messages %}
 		{% for message in messages %} <h3>{{ message }}</h3> {% endfor %}
 	{% endif %}
