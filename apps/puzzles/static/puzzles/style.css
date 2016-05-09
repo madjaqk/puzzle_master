@@ -128,6 +128,15 @@ table.cryptic_clues td{
 	list-style-type: none;
 }
 
+div.quick_hits_puzzle{
+	display: inline-block;
+	margin: 50px;
+}
+
+div.quick_hits_puzzle h3{
+	text-align: center;
+}
+
 table.quick_hits{
 	margin: 0px;
 }
