@@ -1,127 +1,264 @@
 {% extends "puzzles/puzzle_base.html" %}
 
+<script>
+
+function allowDrop(ev) {
+        ev.preventDefault(); 
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id); 
+    }
+
+    function drop(ev) {
+        ev.preventDefault(); 
+        var data = ev.dataTransfer.getData("text"); 
+        ev.target.appendChild(document.getElementById(data)); 
+    }
+</script>
+
 {% block puzzle %}
 <span class="flavor_text">All the labels have come off of your movie collection.  Even after you've replaced them all, you find there's still one missing...</span>
-<p>_____ and _____ &nbsp; _____ the _____</p>
-<p>_____ &nbsp; _____ &nbsp; _____ &nbsp; V: The _____ &nbsp; _____ &nbsp; _____ </p>
-<p>A _____ on _____ &nbsp; _____ 3: _____ &nbsp; _____ </p>
-<p>_____ &nbsp; _____VI: The _____ &nbsp; _____ </p>
-<p>_____ &nbsp; of the _____ &nbsp; : The _____ &nbsp; of the _____ &nbsp; _____ &nbsp; </p>
-<p>_____ &nbsp; _____ &nbsp; _____ &nbsp; _____: The _____ of _____</p>
-<p>_____ &nbsp; and _____: The _____ &nbsp; _____ &nbsp; of the _____ &nbsp; </p>
-<p>_____: The _____ of _____ &nbsp; _____</p>
-<p>The _____ &nbsp; _____ 2: _____   _____ </p>
-<p>_____: &nbsp; _____ &nbsp; _____ &nbsp; of _____ &nbsp; for _____ &nbsp; _____ &nbsp; _____ &nbsp; _____ &nbsp; of  _____ &nbsp; </p>
-<p>_____ &nbsp; _____ and the _____ of the _____</p>
-<p>_____ &nbsp; _____: _____ of _____</p>
-<p>The _____ with the _____ &nbsp; _____</p>
-<p>_____ at the _____: _____ of the _____ </p>
-<p>_____ &nbsp; _____: _____ of _____ &nbsp; _____ &nbsp; _____</p>
-<p>_____ &nbsp; _____ & the _____: The _____ &nbsp; _____</p>
-<p>The _____ of _____: The _____ of the _____ &nbsp; _____</p>
-<p>_____ &nbsp; _____: _____ &nbsp; _____, _____ &nbsp; _____</p>
-<p>The _____ &nbsp; _____: &nbsp; _____ &nbsp; _____ &nbsp; – _____ &nbsp; 2</p>
-<p>The _____ &nbsp; _____: &nbsp; _____ &nbsp; of _____ &nbsp; </p>
-<p> _____ &nbsp;  _____: &nbsp; The _____ &nbsp; _____ &nbsp; </p>
+ <ol>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> and
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
 
-ABBOTT 
-AMERICA
-ANCHORMAN 
-BACK
-BAD 
-BATTLE 
-BENEFIT
-BIG 
-BLACK
-BONES
-BOOK 
-BORAT
-BREAKING
-BURGUNDY 
-CALL 
-CARIBBEAN
-CHRONICLES 
-CITY
-COMMANDER
-COSTELLO 
-COUNTRY
-CRADLE 
-CROFT 
-CULTURAL
-CURSE
-DAWN
-DAWN 
-DIARIES 
-DREAM 
-ELM 
-EMPIRE 
-ENGAGEMENT 
-EPISODE 
-FAR
-FATHER 
-GIRL 
-GLORIOUS
-HARRY 
-INSTRUMENTS
-JACKSON 
-KAZAKHSTAN
-LARA 
-LEARNINGS
-LEGEND 
-LIEUTENANT 
-LIFE 
-LIGHTNING 
-LIKE 
-LIKE 
-MAKE
-MASTER
-MAZE
-MEET 
-MOMMAS 
-MORTAL
-MUSEUM 
-NARNIA 
-NATION
-NATIONAL 
-NEW 
-NIGHT 
-NIGHTMARE 
-OLYMPIANS 
-ORDER 
-ORLEANS
-PART
-PEARL
-PERCY 
-PHOENIX 
-PIRATES
-PORT 
-POTTER 
-PRINCESS 
-RAIDER 
-RON 
-ROYAL 
-RUNNER
-SAGA
-SCORCH
-SECRETS 
-SIDE
-SMITHSONIAN 
-SON 
-STAR 
-STAR 
-STREET 
-STRIKES 
-TATTOO 
-THIEF 
-TREADER 
-TREASURE 
-TREK 
-TRIALS
-TWILIGHT
-UNDISCOVERED 
-VOYAGE 
-WARRIORS 
-WARS 
-WORLD
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; V: The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>&nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>A
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> on
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> 3:
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>VI: The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; of the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; : The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; of the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>&nbsp; </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; and
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; of the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> 2:
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; for
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;</li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> and the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>:
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> with the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> at the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>:
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>:
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &amp; the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> of the
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>:
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>,
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </li>
+            <li>The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; –
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; 2</li>
+            <li>The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; of
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; </li>
+            <li>
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>: &nbsp; The
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp;
+                <div class="blank inline" ondrop="drop(event)" ondragover="allowDrop(event)"></div> &nbsp; </li>
+        </ol>
+
+ <p id="ABBOTT" draggable="true" ondragstart="drag(event)" class="clue">ABBOTT</p>
+        <p id="AMERICA" draggable="true" ondragstart="drag(event)" class="clue">AMERICA</p>
+        <p id="ANCHORMAN" draggable="true" ondragstart="drag(event)" class="clue">ANCHORMAN</p>
+        <p id="BACK" draggable="true" ondragstart="drag(event)" class="clue">BACK</p>
+        <p id="BAD" draggable="true" ondragstart="drag(event)" class="clue">BAD</p>
+        <p id="BATTLE" draggable="true" ondragstart="drag(event)" class="clue">BATTLE</p>
+        <p id="BENEFIT" draggable="true" ondragstart="drag(event)" class="clue">BENEFIT</p>
+        <p id="BIG" draggable="true" ondragstart="drag(event)" class="clue">BIG</p>
+        <p id="BLACK" draggable="true" ondragstart="drag(event)" class="clue">BLACK</p>
+        <p id="BONES" draggable="true" ondragstart="drag(event)" class="clue">BONES</p>
+        <p id="BOOK" draggable="true" ondragstart="drag(event)" class="clue">BOOK</p>
+        <p id="BORAT" draggable="true" ondragstart="drag(event)" class="clue">BORAT</p>
+        <p id="BREAKING" draggable="true" ondragstart="drag(event)" class="clue">BREAKING</p>
+        <p id="BURGUNDY" draggable="true" ondragstart="drag(event)" class="clue">BURGUNDY</p>
+        <p id="CALL" draggable="true" ondragstart="drag(event)" class="clue">CALL</p>
+        <p id="CARIBBEAN" draggable="true" ondragstart="drag(event)" class="clue">CARIBBEAN</p>
+        <p id="CHRONICLES" draggable="true" ondragstart="drag(event)" class="clue">CHRONICLES</p>
+        <p id="CITY" draggable="true" ondragstart="drag(event)" class="clue">CITY</p>
+        <p id="COMMANDER" draggable="true" ondragstart="drag(event)" class="clue">COMMANDER</p>
+        <p id="COSTELLO" draggable="true" ondragstart="drag(event)" class="clue">COSTELLO</p>
+        <p id="COUNTRY" draggable="true" ondragstart="drag(event)" class="clue">COUNTRY</p>
+        <p id="CRADLE" draggable="true" ondragstart="drag(event)" class="clue">CRADLE</p>
+        <p id="CROFT" draggable="true" ondragstart="drag(event)" class="clue">CROFT</p>
+        <p id="CULTURAL" draggable="true" ondragstart="drag(event)" class="clue">CULTURAL</p>
+        <p id="CURSE" draggable="true" ondragstart="drag(event)" class="clue">CURSE</p>
+        <p id="DAWN" draggable="true" ondragstart="drag(event)" class="clue">DAWN</p>
+        <p id="DAWN" draggable="true" ondragstart="drag(event)" class="clue">DAWN</p>
+        <p id="DIARIES" draggable="true" ondragstart="drag(event)" class="clue">DIARIES</p>
+        <p id="DREAMS" draggable="true" ondragstart="drag(event)" class="clue">DREAMS</p>
+        <p id="ELM" draggable="true" ondragstart="drag(event)" class="clue">ELM</p>
+        <p id="EMPIRE" draggable="true" ondragstart="drag(event)" class="clue">EMPIRE</p>
+        <p id="ENGAGEMENT" draggable="true" ondragstart="drag(event)" class="clue">ENGAGEMENT</p>
+        <p id="EPISODE" draggable="true" ondragstart="drag(event)" class="clue">EPISODE</p>
+        <p id="FAR" draggable="true" ondragstart="drag(event)" class="clue">FAR</p>
+        <p id="FATHER" draggable="true" ondragstart="drag(event)" class="clue">FATHER</p>
+        <p id="GIRL" draggable="true" ondragstart="drag(event)" class="clue">GIRL</p>
+        <p id="GLORIOUS" draggable="true" ondragstart="drag(event)" class="clue">GLORIOUS</p>
+        <p id="HARRY" draggable="true" ondragstart="drag(event)" class="clue">HARRY</p>
+        <p id="INSTRUMENTS" draggable="true" ondragstart="drag(event)" class="clue">INSTRUMENTS</p>
+        <p id="JACKSON" draggable="true" ondragstart="drag(event)" class="clue">JACKSON</p>
+        <p id="KAZAHSTAN" draggable="true" ondragstart="drag(event)" class="clue">KAZAHSTAN</p>
+        <p id="LARA" draggable="true" ondragstart="drag(event)" class="clue">LARA</p>
+        <p id="LEARNINGS" draggable="true" ondragstart="drag(event)" class="clue">LEARNINGS</p>
+        <p id="LEGEND" draggable="true" ondragstart="drag(event)" class="clue">LEGEND</p>
+        <p id="LIEUTENANT" draggable="true" ondragstart="drag(event)" class="clue">LIEUTENANT</p>
+        <p id="LIFE" draggable="true" ondragstart="drag(event)" class="clue">LIFE</p>
+        <p id="LIGHTNING" draggable="true" ondragstart="drag(event)" class="clue">LIGHTNING</p>
+        <p id="LIKE" draggable="true" ondragstart="drag(event)" class="clue">LIKE</p>
+        <p id="LIKE" draggable="true" ondragstart="drag(event)" class="clue">LIKE</p>
+        <p id="MAKE" draggable="true" ondragstart="drag(event)" class="clue">MAKE</p>
+        <p id="MASTER" draggable="true" ondragstart="drag(event)" class="clue">MASTER</p>
+        <p id="MAZE" draggable="true" ondragstart="drag(event)" class="clue">MAZE</p>
+        <p id="MEET" draggable="true" ondragstart="drag(event)" class="clue">MEET</p>
+        <p id="MOMMAS" draggable="true" ondragstart="drag(event)" class="clue">MOMMAS</p>
+        <p id="MORTAL" draggable="true" ondragstart="drag(event)" class="clue">MORTAL</p>
+        <p id="MUSEUM" draggable="true" ondragstart="drag(event)" class="clue">MUSEUM</p>
+        <p id="NARNIA" draggable="true" ondragstart="drag(event)" class="clue">NARNIA</p>
+        <p id="NATION" draggable="true" ondragstart="drag(event)" class="clue">NATION</p>
+        <p id="NATIONAL" draggable="true" ondragstart="drag(event)" class="clue">NATIONAL</p>
+        <p id="NEW" draggable="true" ondragstart="drag(event)" class="clue">NEW</p>
+        <p id="NIGHT" draggable="true" ondragstart="drag(event)" class="clue">NIGHT</p>
+        <p id="NIGHTMARE" draggable="true" ondragstart="drag(event)" class="clue">NIGHTMARE</p>
+        <p id="OLYMPIANS" draggable="true" ondragstart="drag(event)" class="clue">OLYMPIANS</p>
+        <p id="ORDER" draggable="true" ondragstart="drag(event)" class="clue">ORDER</p>
+        <p id="ORLEANS" draggable="true" ondragstart="drag(event)" class="clue">ORLEANS</p>
+        <p id="PART" draggable="true" ondragstart="drag(event)" class="clue">PART</p>
+        <p id="PEARL" draggable="true" ondragstart="drag(event)" class="clue">PEARL</p>
+        <p id="PERCY" draggable="true" ondragstart="drag(event)" class="clue">PERCY</p>
+        <p id="PHEONIX" draggable="true" ondragstart="drag(event)" class="clue">PHEONIX</p>
+        <p id="PIRATES" draggable="true" ondragstart="drag(event)" class="clue">PIRATES</p>
+        <p id="PORT" draggable="true" ondragstart="drag(event)" class="clue">PORT</p>
+        <p id="POTTER" draggable="true" ondragstart="drag(event)" class="clue">POTTER</p>
+        <p id="PRINCESS" draggable="true" ondragstart="drag(event)" class="clue">PRINCESS</p>
+        <p id="RAIDER" draggable="true" ondragstart="drag(event)" class="clue">RAIDER</p>
+        <p id="RON" draggable="true" ondragstart="drag(event)" class="clue">RON</p>
+        <p id="ROYAL" draggable="true" ondragstart="drag(event)" class="clue">ROYAL</p>
+        <p id="RUNNER" draggable="true" ondragstart="drag(event)" class="clue">RUNNER</p>
+        <p id="SAGA" draggable="true" ondragstart="drag(event)" class="clue">SAGA</p>
+        <p id="SCORCH" draggable="true" ondragstart="drag(event)" class="clue">SCORCH</p>
+        <p id="SECRETS" draggable="true" ondragstart="drag(event)" class="clue">SECRETS</p>
+        <p id="SIDE" draggable="true" ondragstart="drag(event)" class="clue">SIDE</p>
+        <p id="SMITHSONIAN" draggable="true" ondragstart="drag(event)" class="clue">SMITHSONIAN</p>
+        <p id="SON" draggable="true" ondragstart="drag(event)" class="clue">SON</p>
+        <p id="STAR" draggable="true" ondragstart="drag(event)" class="clue">STAR</p>
+        <p id="STAR" draggable="true" ondragstart="drag(event)" class="clue">STAR</p>
+        <p id="STREET" draggable="true" ondragstart="drag(event)" class="clue">STREET</p>
+        <p id="STRIKES" draggable="true" ondragstart="drag(event)" class="clue">STRIKES</p>
+        <p id="TATTOO" draggable="true" ondragstart="drag(event)" class="clue">TATTOO</p>
+        <p id="THIEF" draggable="true" ondragstart="drag(event)" class="clue">THIEF</p>
+        <p id="TREADER" draggable="true" ondragstart="drag(event)" class="clue">TREADER</p>
+        <p id="TREASURE" draggable="true" ondragstart="drag(event)" class="clue">TREASURE</p>
+        <p id="TREK" draggable="true" ondragstart="drag(event)" class="clue">TREK</p>
+        <p id="TRIALS" draggable="true" ondragstart="drag(event)" class="clue">TRIALS</p>
+        <p id="TWILIGHT" draggable="true" ondragstart="drag(event)" class="clue">TWILIGHT</p>
+        <p id="UNDISCOVERED" draggable="true" ondragstart="drag(event)" class="clue">UNDISCOVERED</p>
+        <p id="VOYAGE" draggable="true" ondragstart="drag(event)" class="clue">VOYAGE</p>
+        <p id="WARRIORS" draggable="true" ondragstart="drag(event)" class="clue">WARRIORS</p>
+        <p id="WARS" draggable="true" ondragstart="drag(event)" class="clue">WARS</p>
+        <p id="WORLD" draggable="true" ondragstart="drag(event)" class="clue">WORLD</p>
 
 {% endblock %}
