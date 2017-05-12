@@ -193,3 +193,17 @@ table.the_twist td{
 	text-align: center;
 	vertical-align: center;
 }
+.blank{
+    height: 20px;
+    width: 150px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.inline{
+    display: inline-block;
+}
+
+.clue{
+    display: inline-block;
+    margin: 5px;
+}
